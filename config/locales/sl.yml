@@ -1,0 +1,45 @@
+sl:
+
+  successfully_created: "%{resource} dodano!"
+  successfully_removed: "%{resource} odstranjeno!"
+  successfully_updated: "%{resource} osveženo!"
+  
+  essentials:
+    parsed_with: Procesirano z
+
+  activerecord:
+    attributes:
+      order:
+        completed_at: Zaključeno
+    errors:
+      messages:
+        invalid_date_time: je neveljaven datum
+           
+  upload:
+    model_name: Datoteke
+    file_name: File Name
+    size: Velikost
+    
+  # spree hack  
+  first_name_start: "Ime se začne z"
+  last_name_start: "Priimek se začne z"
+  
+  spree:
+    admin:
+      shared:
+        contents_tab:
+          content: Vsebine
+        
+      subnav:
+        uploads: Datoteke      
+                  
+      uploads:
+        new:
+          new_upload: Nova datoteka
+        edit:
+          edit_upload: Uredi datoteko
+          preview: Predogled
+          link: Povezava
+        index:
+          listing_uploads: Datoteke
+          new_upload: Dodaj datoteko

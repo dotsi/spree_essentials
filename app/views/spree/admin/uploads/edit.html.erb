@@ -8,7 +8,10 @@
     <p>
       <% if @upload.image_content? %>
         <b><%= t('.preview') %>:</b><br/>
-        <%= link_to image_tag(@upload.attachment.url(:small)), @upload.attachment.url(:original) %>
+        <%= link_to image_tag(@upload.attachment.url(:small)), @upload.attachment.url(:small) %>
+        <%= link_to image_tag(@upload.attachment.url(:medium)), @upload.attachment.url(:medium) %>
+        <%= link_to image_tag(@upload.attachment.url(:large)), @upload.attachment.url(:large) %>
+        <%= link_to "Original", @upload.attachment.url(:original) %>
       <% else %>
         <b><%= t('.link') %>:</b><br/>
         <%= link_to @upload.attachment_file_name, @upload.attachment.url %>
